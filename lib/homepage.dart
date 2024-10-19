@@ -4,7 +4,7 @@ import 'profile.dart';
 import 'chatbot.dart';
 //import 'signup.dart';
 import 'weather.dart';
-
+import 'croppred.dart';
 class AgroConnectScreen extends StatefulWidget {
   @override
   _AgroConnectScreenState createState() => _AgroConnectScreenState();
@@ -41,7 +41,6 @@ class _AgroConnectScreenState extends State<AgroConnectScreen> {
       );
     }
     if (index == 2) {
-      // Navigate to ProfilePage when Profile icon is tapped
       Navigator.push(
         context,
         MaterialPageRoute(builder: (context) => WeatherScreen()),
@@ -144,7 +143,7 @@ class _AgroConnectScreenState extends State<AgroConnectScreen> {
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 36,
-                    color: Color(0xFFFFFFFF),
+                    color: Color(0xFF07480E),
                     fontFamily: 'Playfair Display',
                   ),
                 ),
@@ -328,11 +327,16 @@ class _AgroConnectScreenState extends State<AgroConnectScreen> {
                       ),
                     ),
                     const SizedBox(height: 20),
+
                     // Updated Disease Detection Card
                     Expanded(
                       child: GestureDetector(
                         onTap: () {
                           // Action for disease detection tap
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => CropInputPage()),
+                          );
                         },
                         child: Container(
                           padding: const EdgeInsets.all(16.0),

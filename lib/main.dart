@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'homepage.dart';
 import 'language_selection_page.dart';
 import 'locale_string.dart';  // Import AgroConnectScreen
+import 'crop_prediction.dart';
 
 void main() {
   runApp(const MyApp());

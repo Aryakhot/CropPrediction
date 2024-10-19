@@ -1,4 +1,4 @@
-name: cropprediction
+name: agroconnect
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -28,11 +28,19 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  async: ^2.12.0  # Update to the latest version
+  characters: ^1.3.1  # Update to the latest version
+  collection: ^1.19.0  # Update to the latest version
+  http_parser: ^4.1.1  # Update to the latest version
+  material_color_utilities: ^0.12.0  # Update to the latest version
+  meta: ^1.16.0  # Update to the latest version
+  path: ^1.9.1  # Update to the latest version
+  string_scanner: ^1.4.0  # Update to the latest version
   flutter:
     sdk: flutter
   fluttermoji: ^1.0.0
   font_awesome_flutter: ^10.5.0  # Add this line with the latest version
-  file_picker: ^5.2.3
+  file_picker: ^8.1.3
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -50,7 +58,7 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^4.0.0
+  flutter_lints: ^5.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
